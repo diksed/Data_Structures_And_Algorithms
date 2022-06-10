@@ -37,5 +37,37 @@ namespace ValueAndReferenceTypesTests
 
             Assert.NotEqual(p1, p2);
         }
+        [Fact]
+        public void SwapByValue()
+        {
+            int a = 23, b = 55;
+
+            var valType = new ValueType();
+            valType.Swap(a, b);
+
+            Assert.Equal(55, b);
+            Assert.Equal(23, a);
+        }
+        [Fact]
+        public void SwapByRef()
+        {
+            int a = 23, b = 55;
+
+            var valType = new RefType();
+            valType.Swap(ref a, ref b);
+
+            Assert.Equal(55, a);
+            Assert.Equal(23, b);
+        }
+        [Fact]
+        public void CheckOutKeyword()
+        {
+            var refType = new RefType();
+            int b = 50;
+
+            refType.CheckOut(out b);
+
+            Assert.Equal(100, b);
+        }
     }
 }
