@@ -18,5 +18,15 @@ namespace ValueAndReferenceTypesTests
             // Assert
             Assert.Equal(p1.X, p2.X);
         }
+        [Fact]
+        public void ValueTypeTest()
+        {
+            var p1 = new ValueType { X = 10, Y = 20 };
+            var p2 = p1;
+
+            p1.X = 30;
+
+            Assert.NotEqual(p1.X, p2.X);
+        }
     }
 }
