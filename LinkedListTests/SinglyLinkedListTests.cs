@@ -104,5 +104,20 @@ namespace LinkedListTests
 
             Assert.Throws<ArgumentException>(() => _list.AddAfter(node, 45));
         }
+        [Fact]
+        public void RemoveFirst_Test()
+        {
+            _list.RemoveFirst();
+
+            Assert.Collection(_list, item => Assert.Equal(6, item));
+        }
+        [Fact]
+        public void RemoveFirst_Exception_Test()
+        {
+            _list.RemoveFirst();
+            _list.RemoveFirst();
+
+            Assert.Throws<Exception>(() => _list.RemoveFirst());
+        }
     }
 }
