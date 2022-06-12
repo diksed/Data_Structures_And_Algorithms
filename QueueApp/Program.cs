@@ -1,20 +1,22 @@
-﻿var _queue = new Queue<ToDo>();
-_queue.Enqueue(new ToDo()
+﻿using DataStructures.Queue;
+
+var _queue = new ArrayQueue<ToDo>();
+_queue.EnQueue(new ToDo()
 {
     Time = 2,
     Describe = "Okula gidilecek."
 });
-_queue.Enqueue(new ToDo()
+_queue.EnQueue(new ToDo()
 {
     Time = 1,
     Describe = "Yemek yenilecek."
 });
-_queue.Enqueue(new ToDo()
+_queue.EnQueue(new ToDo()
 {
     Time = 3,
     Describe = "Sınava girilecek."
 });
-var result = _queue.Dequeue();
+var result = _queue.DeQueue();
 Console.WriteLine(result + " yapıldı.");
 Console.WriteLine(_queue.Count);
 foreach (var item in _queue)
