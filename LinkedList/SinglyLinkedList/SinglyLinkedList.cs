@@ -79,6 +79,31 @@ namespace DataStructures.LinkedList.SinglyLinkedList
             }
             throw new ArgumentException("There is no such a node in the linked list.");
         }
+        public void AddAfter(SinglyLinkedListNode<T> node, T value)
+        {
+            if (node == null)
+                throw new ArgumentNullException(nameof(node));
+            if (isHeadNull)
+            {
+                AddFirst(value);
+                return;
+            }
+            var newNode = new SinglyLinkedListNode<T>(value);
+            var current = Head;
+            while (current != null)
+            {
+                if (current.Equals(node))
+                {
+                    newNode.Next = current.Next;
+                    current.Next = newNode;
+                    Count++;
+                    return;
+                }
+                current = current.Next;
+            }
+            throw new ArgumentException("There is no such a node in the linked list.");
+
+        }
         public IEnumerator<T> GetEnumerator()
         {
             return new SinglyLinkedListEnumerator<T>(Head);
