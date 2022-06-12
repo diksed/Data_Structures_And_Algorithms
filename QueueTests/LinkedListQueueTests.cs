@@ -1,15 +1,14 @@
-using DataStructures.Queue;
-using System;
+﻿using DataStructures.Queue;
 using Xunit;
 
 namespace QueueTests
 {
-    public class QueueTests
+    public class LinkedListQueueTests
     {
-        private ArrayQueue<int> _queue;
-        public QueueTests()
+        private LinkedListQueue<int> _queue;
+        public LinkedListQueueTests()
         {
-            _queue = new ArrayQueue<int>(new int[] { 10, 20, 30 });
+            _queue = new LinkedListQueue<int>(new int[] { 10, 20, 30 });
         }
         [Fact]
         public void Count_Test()
@@ -51,7 +50,7 @@ namespace QueueTests
         {
             var peek = _queue.Peek();
 
-            Assert.Equal(3,_queue.Count);
+            Assert.Equal(3, _queue.Count);
             Assert.Equal(10, peek);
         }
         [Fact]
