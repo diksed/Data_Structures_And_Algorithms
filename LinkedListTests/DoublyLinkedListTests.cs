@@ -112,6 +112,15 @@ namespace LinkedListTests
 
             Assert.Throws<Exception>(() => _list.Remove('x'));
         }
+        [Fact]
+        public void ToList_Test()
+        {
+            var list = _list.ToList();
+
+            Assert.Collection(list,
+                item => Assert.Equal(item, _list.Head.Value),
+                item => Assert.Equal(item, _list.Head.Next.Value));
+        }
 
     }
 }

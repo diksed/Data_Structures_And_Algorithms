@@ -184,5 +184,7 @@ namespace LinkedList.DoblyLinkedList
         {
             return GetEnumerator();
         }
+        public List<T> ToList() =>
+            new List<T>(this);
     }
 }
