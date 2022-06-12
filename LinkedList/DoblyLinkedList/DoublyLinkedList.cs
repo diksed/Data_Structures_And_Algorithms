@@ -1,6 +1,9 @@
-﻿namespace LinkedList.DoblyLinkedList
+﻿using DataStructures.LinkedList.DoublyLinkedList;
+using System.Collections;
+
+namespace LinkedList.DoblyLinkedList
 {
-    public class DoublyLinkedList<T>
+    public class DoublyLinkedList<T> : IEnumerable<T>
     {
         public int Count { get; private set; }
         public DbNode<T> Head { get; private set; }
@@ -16,7 +19,7 @@
         {
             foreach (var item in collection)
             {
-                AddFirst(item);
+                AddLast(item);
             }
         }
         public void AddFirst(T value)
@@ -35,6 +38,28 @@
             Count++;
             return;
         }
+        public void AddLast(T value)
+        {
+            var newNode = new DbNode<T>(value);
+            if (isHeadNull)
+            {
+                AddFirst(value);
+                return;
+            }
+            Tail.Next = newNode;
+            newNode.Prev = Tail;
+            Tail = newNode;
+            Count++;
+            return;
+        }
+        public IEnumerator<T> GetEnumerator()
+        {
+            return new DoublyLinkedListEnumerator<T>(Head);
+        }
 
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
     }
 }
