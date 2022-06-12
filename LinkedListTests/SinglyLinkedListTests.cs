@@ -56,5 +56,23 @@ namespace LinkedListTests
                 item => Assert.Equal(6, item),
                 item => Assert.Equal(value, item));
         }
+        [Theory]
+        [InlineData(60)]
+        [InlineData(6)]
+        [InlineData(10)]
+        [InlineData(15)]
+        [InlineData(1)]
+        [InlineData(9)]
+        public void AddBefore_Test(int value)
+        {
+            _list.AddBefore(_list.Head.Next, value);
+
+            Assert.Collection(_list,
+                item => Assert.Equal(8,item),
+                item => Assert.Equal(value, item),
+                item => Assert.Equal(6, item)
+            );
+        }
+
     }
 }
