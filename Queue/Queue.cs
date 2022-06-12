@@ -1,7 +1,7 @@
 ﻿using DataStructures.Queue.Contracts;
 using System.Collections;
 
-namespace Queue
+namespace DataStructures.Queue
 {
     public class Queue<T> : IQueue<T>
     {
