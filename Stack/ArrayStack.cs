@@ -7,7 +7,18 @@ namespace DataStructures.Stack
 {
     public class ArrayStack<T> : IStack<T>
     {
-        private readonly Array<T> _Array = new Array<T>();
+        private readonly Array<T> _Array;
+        public ArrayStack()
+        {
+            _Array = new Array<T>();
+        }
+        public ArrayStack(IEnumerable<T> collection) : this()
+        {
+            foreach (var item in collection)
+            {
+                Push(item);
+            }
+        }
         public int Count => _Array.Count;
         public IEnumerator<T> GetEnumerator()
         {
