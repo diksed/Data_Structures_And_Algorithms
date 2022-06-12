@@ -1,4 +1,5 @@
 using DataStructures.LinkedList.SinglyLinkedList;
+using System;
 using Xunit;
 
 namespace LinkedListTests
@@ -73,6 +74,12 @@ namespace LinkedListTests
                 item => Assert.Equal(6, item)
             );
         }
+        [Fact]
+        public void AddBefore_ArgumentException()
+        {
+            var node = new SinglyLinkedListNode<int>(55);
 
+            Assert.Throws<ArgumentException>(() => _list.AddBefore(node, 45));
+        }
     }
 }
