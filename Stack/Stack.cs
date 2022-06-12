@@ -5,7 +5,21 @@ namespace DataStructures.Stack
 {
     public class Stack<T> : IStack<T>
     {
-        private readonly Stack<T> _stack;
+        private readonly IStack<T> _stack;
+        public Stack(StackType type = StackType.LinkedList)
+        {
+            switch (type)
+            {
+                case StackType.LinkedList:
+                    _stack = new LinkedListStack<T>();
+                    break;
+                case StackType.Array:
+                    _stack = new ArrayStack<T>();
+                    break;
+                default:
+                    throw new Exception("Undefined type!");
+            }
+        }
         public int Count => _stack.Count;
         public IEnumerator<T> GetEnumerator()
         {
