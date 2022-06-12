@@ -11,17 +11,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{49C0FEE1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UIs", "UIs", "{BDDEE618-514D-42AE-B8A7-EC0735FB8B95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueAndReferenceTypes", "ValueAndReferenceTypes\ValueAndReferenceTypes.csproj", "{E5198901-5652-4C12-A4EA-97407A16F461}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValueAndReferenceTypes", "ValueAndReferenceTypes\ValueAndReferenceTypes.csproj", "{E5198901-5652-4C12-A4EA-97407A16F461}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueAndRefTypeApp", "ValueAndRefTypeApp\ValueAndRefTypeApp.csproj", "{5E732094-F0DD-4119-91C2-E413BE096805}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValueAndRefTypeApp", "ValueAndRefTypeApp\ValueAndRefTypeApp.csproj", "{5E732094-F0DD-4119-91C2-E413BE096805}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationsTests", "ApplicationsTests", "{C90D47B8-B7CC-43B3-AC49-3102E8DECC2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueAndRefTypesTests", "ValueAndRefTypesTests\ValueAndRefTypesTests.csproj", "{70033292-7698-4BBC-A93A-AD750053E6CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValueAndRefTypesTests", "ValueAndRefTypesTests\ValueAndRefTypesTests.csproj", "{70033292-7698-4BBC-A93A-AD750053E6CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayApp", "ArrayApp\ArrayApp.csproj", "{25F80461-14E6-4767-88CB-4F02AC063F66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayApp", "ArrayApp\ArrayApp.csproj", "{25F80461-14E6-4767-88CB-4F02AC063F66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array", "Array\Array.csproj", "{35A93586-5E97-43AA-9D30-78CC30D24432}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Array", "Array\Array.csproj", "{35A93586-5E97-43AA-9D30-78CC30D24432}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStructuresTests", "DataStructuresTests", "{196A3A19-D428-4445-8C07-CC924BB84987}"
 EndProject
@@ -29,15 +29,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArrayTests", "ArrayTests", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinkedListTest", "LinkedListTest", "{83205814-D8DE-4A51-BB01-2CC4AD304EA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayTests", "ArrayTests\ArrayTests.csproj", "{89593168-85F1-46F8-B3AC-1BE2F67345D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayTests", "ArrayTests\ArrayTests.csproj", "{89593168-85F1-46F8-B3AC-1BE2F67345D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList\LinkedList.csproj", "{CC19F509-FC98-40B0-9AB4-0791A2BF1EF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedList", "LinkedList\LinkedList.csproj", "{CC19F509-FC98-40B0-9AB4-0791A2BF1EF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionsTests", "CollectionsTests\CollectionsTests.csproj", "{DFE5C459-7BAF-4120-BB81-BC46A68D5CE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionsTests", "CollectionsTests\CollectionsTests.csproj", "{DFE5C459-7BAF-4120-BB81-BC46A68D5CE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListTests", "LinkedListTests\LinkedListTests.csproj", "{B481DF73-BEE2-46B5-9312-AB69901DA611}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedListTests", "LinkedListTests\LinkedListTests.csproj", "{B481DF73-BEE2-46B5-9312-AB69901DA611}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListApp", "LinkedListApp\LinkedListApp.csproj", "{8EC9027E-CDFD-4748-ABE9-B21456A21B72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedListApp", "LinkedListApp\LinkedListApp.csproj", "{8EC9027E-CDFD-4748-ABE9-B21456A21B72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "Stack\Stack.csproj", "{24FECF95-E806-4C06-8BD3-077581E65513}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackApp", "StackApp\StackApp.csproj", "{D22EC497-876B-42F2-9690-B9C5F6135BC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +89,14 @@ Global
 		{8EC9027E-CDFD-4748-ABE9-B21456A21B72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EC9027E-CDFD-4748-ABE9-B21456A21B72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EC9027E-CDFD-4748-ABE9-B21456A21B72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24FECF95-E806-4C06-8BD3-077581E65513}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24FECF95-E806-4C06-8BD3-077581E65513}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24FECF95-E806-4C06-8BD3-077581E65513}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24FECF95-E806-4C06-8BD3-077581E65513}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D22EC497-876B-42F2-9690-B9C5F6135BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D22EC497-876B-42F2-9690-B9C5F6135BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D22EC497-876B-42F2-9690-B9C5F6135BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D22EC497-876B-42F2-9690-B9C5F6135BC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -104,6 +116,8 @@ Global
 		{DFE5C459-7BAF-4120-BB81-BC46A68D5CE3} = {C90D47B8-B7CC-43B3-AC49-3102E8DECC2F}
 		{B481DF73-BEE2-46B5-9312-AB69901DA611} = {83205814-D8DE-4A51-BB01-2CC4AD304EA5}
 		{8EC9027E-CDFD-4748-ABE9-B21456A21B72} = {BDDEE618-514D-42AE-B8A7-EC0735FB8B95}
+		{24FECF95-E806-4C06-8BD3-077581E65513} = {434201A6-2949-4BFF-9FCB-06086517C158}
+		{D22EC497-876B-42F2-9690-B9C5F6135BC9} = {BDDEE618-514D-42AE-B8A7-EC0735FB8B95}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5FD4AB6C-A89F-4458-8870-B00EFC733CC9}
